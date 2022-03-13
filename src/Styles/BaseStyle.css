@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+:root{
+  --color-title: #2e2e2e;
+  --color-title-hover:#7e7e7e;
+  --color-subtitle: #4e4e4e;
+  --color-text: #7c7c7c;
+  
+  --color-main-blue: #2279d2; 
+  --color-main-blue-brighter: #429bf5; 
+}
+
+
+body{
+  font-family: 'Arvo', monospace;
+  background-color: #0F0F0F;
+}
+
+h1{
+  font-family: 'Arvo', monospace;
+}
+
+.main-header{
+  background-color: #20232a;
+
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  top: 0;
+}
+
+.main-header a{
+  color: var(--color-main-blue);
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+.main-header a:hover{
+  color: var(--color-main-blue-brighter);
+}
+
+#main-container{
+  margin-top: 6rem;
+
+  width: 55%;
+  margin-left: 22.5%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 2rem;
+}
+
+
+#main-container .post-card{
+  border-top: 5px solid var(--color-main-blue);
+  box-shadow: 1px 1px 5px 1px #1f1f1f46;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color:var(--color-title);
+  padding: 1rem 2rem;
+}
+
+
+
+/* #main-container .post-card:first-of-type{
+  border-top: 1px solid #00000028; 
+} */
+
+#main-container .post-card h1{
+  transition: 0.15s;
+}
+
+#main-container .post-card:hover h1{
+  color:var(--color-title-hover);
+}
+
+#main-container .post-card p{
+  color: var(--color-subtitle);
+}
+
+#main-container .post-card .post-date{
+  color: #a8a8a8;
+  font-size: 0.9rem;
+}
+
+
+
+#main-container .post .title{
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-title)
+}
+
+
+#main-container .post .description{
+  margin-bottom: 2rem;
+  color: var(--color-subtitle);
+  font-size: 1.8rem;
+}
+
+#main-container .post .post-content{
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 2.4rem;
+}
+
+
+#main-container .post .post-content::first-letter{
+  font-weight: bold;
+  color: var(--color-main-blue);
+  font-size: 4rem;
+  top: 2rem;
+}
+
+#main-container .post .post-content .capital-letter{
+  /* font-size: 3rem; */
+}
+
+
+.form input,
+.form textarea{
+  width: 100%;
+}
