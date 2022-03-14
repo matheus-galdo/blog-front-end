@@ -1,7 +1,7 @@
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { background, greenHighlight, textGray, textLightGray } from '../colors';
+import { background, greenHighlight, textGray, textLightGray } from '../resources/colors';
 import {BsCheckLg} from 'react-icons/bs'
 
 const PostCard = ({ post }) => {

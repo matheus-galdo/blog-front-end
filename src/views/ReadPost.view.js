@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import api from '../../services/serviceConfig';
+import api from '../services/serviceConfig';
 import moment from 'moment';
-import { getPost } from '../../services/PostService';
+import { getPost } from '../services/PostsService';
 
-function Post({match}) {
+function ReadPost({match}) {
 
     const [post,setPost] = useState([]);
 
@@ -28,4 +28,4 @@ function Post({match}) {
     );    
 }
 
-export default Post;
+export default ReadPost;

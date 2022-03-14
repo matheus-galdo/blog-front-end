@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import api from '../../services/serviceConfig';
 import {Link} from 'react-router-dom'
 import moment from 'moment';
-import { getPosts } from '../../services/PostService';
+import { getPosts } from '../../services/PostsService';
 
 export default function Dashboard(props) {
     const [posts,setPosts] = useState([]);

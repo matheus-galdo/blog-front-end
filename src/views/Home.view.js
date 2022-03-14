@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import TerminalLocation from '../../components/TerminalLocation';
-import PostCard from '../../components/PostCard';
-import { getPosts } from '../../services/PostService';
+import TerminalLocation from '../components/TerminalLocation';
+import PostCard from '../components/PostCard';
+import { getPosts } from '../services/PostsService';
 
 function Home() {
 

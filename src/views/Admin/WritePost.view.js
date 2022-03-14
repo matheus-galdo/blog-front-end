@@ -21,7 +21,7 @@ function TextEditor(props) {
     )
 }
 
-function Write(props) {
+function WritePost(props) {
 
 
     const [titulo,setTitulo] = useState('')
@@ -117,4 +117,4 @@ function Write(props) {
     )
 }
 
-export default Write;
+export default WritePost;

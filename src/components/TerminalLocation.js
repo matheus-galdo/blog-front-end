@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { topbarBackground, terminalBarPrimaryBlue, terminalBarSecondaryBlue } from "../colors";
+import { topbarBackground, terminalBarPrimaryBlue, terminalBarSecondaryBlue } from "../resources/colors";
 
 const TerminalLocation = (props) => {
 
