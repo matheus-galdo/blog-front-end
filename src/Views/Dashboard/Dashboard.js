@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import api from '../../services/serviceConfig';
 import {Link} from 'react-router-dom'
 import moment from 'moment';
+import { getPosts } from '../../services/PostService';
 
 export default function Dashboard(props) {
     const [posts,setPosts] = useState([]);
@@ -9,13 +10,9 @@ export default function Dashboard(props) {
     
 
     useEffect(() => {
-        async function fetchAllPosts() {
-            await api.get('list-all-posts')
-            .then(res => {
-                setPosts( res.data )
-            })
-        }
-        fetchAllPosts();    
+        getPosts().then(response => {
+            setPosts(response.data)
+        });
     }, []);
 
     function handleTyping(ev) {

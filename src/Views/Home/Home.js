@@ -1,20 +1,23 @@
-// import ListPosts from './ListPosts';
-// import React, { useState, useEffect } from 'react';
-import React, { Suspense } from 'react';
-const ListPosts = React.lazy(()=>import('./ListPosts'))
-// 
+import React, { useEffect, useState } from 'react';
+import TerminalLocation from '../../components/TerminalLocation';
+import PostCard from '../../components/PostCard';
+import { getPosts } from '../../services/PostService';
 
 function Home() {
-  // const [news, setNews] = useState();
 
-  
-  return (
-    <>
-    <Suspense fallback={<p>Carregando</p>}>
-      <ListPosts/>
-    </Suspense>
-    </>
-  );
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        getPosts().then(response => {
+            setPosts(response.data)
+        });
+    }, []);
+
+
+    return <div>
+        <TerminalLocation />
+        {posts.map((post) => <PostCard key={post.id} post={post} />)}
+    </div>
 }
 
 export default Home;

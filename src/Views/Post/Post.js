@@ -13,12 +13,6 @@ function Post({match}) {
         })   
     }, []);
 
-
-    function formatDate(){
-        // if(post.length != 0) return();
-    }
-
-
     return (
     <div className="post">
         <div className="author">

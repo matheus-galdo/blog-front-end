@@ -31,7 +31,7 @@ function Write(props) {
 
     const [showPreview, setShowPreview] = useState(false)
 
-    
+    console.log('aaaaaaaaaaaaaaaaa');
 
     function handleTitle(e) {
         if(e.target.value.length <= 100){
