@@ -61,7 +61,7 @@ function WritePost(props) {
             content: conteudo
         }
 
-        api.post('create-post', data)
+        api.post('posts', data)
         .then(res => {
             console.log( res.data )
         })
